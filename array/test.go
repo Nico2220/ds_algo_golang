@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-	arr := []int{1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1}
-	result := ConsecutiveOnes(arr)
+	result := Read(5, []int{3, 1, 3, 3, 1}, 5)
 	fmt.Println(result)
 
 }

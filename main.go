@@ -45,4 +45,3 @@ func consecutiveOnes(arr []int) int {
 	}
 	return longest
 }
-
