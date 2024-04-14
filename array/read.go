@@ -12,3 +12,4 @@ func Read(N int, book []int, target int) string {
 	}
 	return "NO"
 }
+
