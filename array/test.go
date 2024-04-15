@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := Read(5, []int{4, 1, 3, 3, 1}, 5)
+	result := MajorityElement([]int{2, 2, 1, 3, 1, 1, 3, 1, 1})
 	fmt.Println(result)
 
 }
