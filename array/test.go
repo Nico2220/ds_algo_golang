@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := MajorityElement([]int{2, 2, 1, 3, 1, 1, 3, 1, 1})
+	result := MaxSubArraysum([]int{1, 2, 7, -4, 3, 2, -10, 9, 1}, 9)
 	fmt.Println(result)
 
 }
