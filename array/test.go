@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := MaxSubArraysum([]int{1, 2, 7, -4, 3, 2, -10, 9, 1}, 9)
+	result := AlternateNumbers([]int{1, 2, -4, -5})
 	fmt.Println(result)
 
 }
