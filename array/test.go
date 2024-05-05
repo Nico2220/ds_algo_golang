@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := read(9, []int{2, 2, 5, 5, 5, 5, 5, 5, 4}, 5)
+	result := MaxSubArraySum([]int{1, 2, 7, -4, 3, 2, -10, 9, 1}, 9)
 	fmt.Println(result)
 
 }
