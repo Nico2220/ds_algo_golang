@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := MaxSubArraySum([]int{1, 2, 7, -4, 3, 2, -10, 9, 1}, 9)
+	result := nextPermutation([]int{1, 3, 2})
 	fmt.Println(result)
 
 }
