@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func nextPermutation(A []int) []int {
 	index := -1
 	for i := len(A) - 2; i >= 0; i-- {
@@ -22,14 +20,12 @@ func nextPermutation(A []int) []int {
 			break
 		}
 	}
-	fmt.Println(A)
 
 	subArray := A[index+1:]
 	reverse(subArray)
 	result := A[:index+1]
 	result = append(result, subArray...)
 	return result
-	return []int{}
 }
 
 func swap(i, j int, array []int) {
