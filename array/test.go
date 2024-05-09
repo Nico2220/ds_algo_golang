@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	result := nextPermutation([]int{1, 3, 2})
+	result := superiorElement([]int{1, 2, 3, 2})
 	fmt.Println(result)
 
 }

@@ -5,9 +5,11 @@ import (
 )
 
 func main() {
-	arr := []int{1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1}
-	result := consecutiveOnes(arr)
+	arr := []string{"a", "b", "c", "d", "e"}
+	result := arr[1:4]
+	result = append(result, "z")
 	fmt.Println(result)
+	fmt.Println(arr)
 
 }
 
