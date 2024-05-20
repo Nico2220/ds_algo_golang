@@ -13,11 +13,10 @@ func NumberOfProvince(isConnected [][]int) int {
 		}
 	}
 
-	
-	visited := make([]int, length)	
+	visited := make([]int, length)
 	count := 0
-	
-	for i := 0; i<length; i++ {
+
+	for i := 0; i < length; i++ {
 		if visited[i] != 1 {
 			bfs(i, adjList, visited)
 			count++
@@ -32,7 +31,7 @@ func bfs(i int, adjList map[int][]int, visited []int) {
 	for len(queue) > 0 {
 		current := queue[0]
 		queue = queue[1:]
-		
+
 		neighbors := adjList[current]
 		for _, v := range neighbors {
 			if visited[v] != 1 {
