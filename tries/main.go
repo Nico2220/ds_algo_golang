@@ -38,7 +38,7 @@ func (t *Trie) Insert(word string) {
 	currentNode.isEnd = true
 }
 
-func(t *Trie) Search(word string) bool {
+func (t *Trie) Search(word string) bool {
 	currentNode := t.root
 	for _, char := range word {
 		if _, ok := currentNode.children[char]; !ok {
@@ -46,9 +46,9 @@ func(t *Trie) Search(word string) bool {
 		}
 		currentNode = currentNode.children[char]
 	}
-	
+
 	return currentNode.isEnd
-} 
+}
 
 func main() {
 	trie := newTrie()
@@ -58,6 +58,5 @@ func main() {
 		trie.Insert(word)
 	}
 
-	
 	fmt.Println(trie.Search("banan"))
 }

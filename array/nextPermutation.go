@@ -1,4 +1,4 @@
-package main
+package array
 
 func nextPermutation(A []int) []int {
 	index := -1

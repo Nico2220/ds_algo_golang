@@ -1,4 +1,4 @@
-package main
+package array
 
 func Read(N int, book []int, target int) string {
 	seen := map[int]bool{}

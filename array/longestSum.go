@@ -1,4 +1,4 @@
-package main
+package array
 
 func longestSum(arr []int, k int) int {
 	start := 0

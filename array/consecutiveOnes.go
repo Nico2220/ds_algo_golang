@@ -1,4 +1,4 @@
-package main
+package array
 
 func ConsecutiveOnes(arr []int) int {
 	longest := 0

@@ -1,4 +1,4 @@
-package main
+package array
 
 func SortdArray(arr []int, n int) []int {
 	var zeros, ones, twos int

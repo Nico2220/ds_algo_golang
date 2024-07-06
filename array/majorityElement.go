@@ -1,4 +1,4 @@
-package main
+package array
 
 func MajorityElement(arr []int) int {
 	pointerOne := 0

@@ -2,14 +2,16 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Nico2220/ds_algo_golang/array"
 )
 
 func main() {
-	arr := []string{"a", "b", "c", "d", "e"}
-	result := arr[1:4]
-	result = append(result, "z")
+	arr := []int{0,3,7,2,5,8,4,6,0,1}
+	result := array.LongestConsecutif3(arr)
+
 	fmt.Println(result)
-	fmt.Println(arr)
+	
 
 }
 

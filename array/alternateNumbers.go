@@ -1,4 +1,4 @@
-package main
+package array
 
 func AlternateNumbers(a []int) []int {
 	pos := 0

@@ -1,4 +1,4 @@
-package main
+package array
 
 func FindArrayIntersection(arr []int, n int, brr []int, m int) []int {
 	pointerOne := 0
