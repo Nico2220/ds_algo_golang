@@ -6,12 +6,23 @@ import (
 	"github.com/Nico2220/ds_algo_golang/array"
 )
 
-func main() {
-	arr := []int{0,3,7,2,5,8,4,6,0,1}
-	result := array.LongestConsecutif3(arr)
+type Parent struct{}
 
+func (c *Parent) Print() {
+	fmt.Println("parent")
+}
+
+type Child struct {
+	Parent
+}
+
+func (p *Child) Print() {
+	fmt.Println("child")
+}
+
+func main() {
+	result := array.RotateMatrix_solution2([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
 	fmt.Println(result)
-	
 
 }
 
