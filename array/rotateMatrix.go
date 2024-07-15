@@ -21,10 +21,10 @@ func RotateMatrix(matrix [][]int) [][]int {
 	return ans
 }
 
-func RotateMatrix_solution2(matrix [][]int)[][]int {
+func RotateMatrix_solution2(matrix [][]int) [][]int {
 	n := len(matrix)
-	for i := 0; i < n - 1; i++ {
-		for j := i+1; j < n; j++ {
+	for i := 0; i < n-1; i++ {
+		for j := i + 1; j < n; j++ {
 			swapMatrix(i, j, matrix)
 		}
 	}
@@ -45,7 +45,7 @@ func swapMatrix(i, j int, matrix [][]int) {
 }
 
 func Reverse(arr []int) {
-	left := 0;
+	left := 0
 	right := len(arr) - 1
 	for left < right {
 		tem := arr[left]
@@ -54,4 +54,36 @@ func Reverse(arr []int) {
 		left++
 		right--
 	}
+}
+
+func RotateMatrixRevision1(matrix [][]int) [][]int {
+	n := len(matrix)
+	result := make([][]int, n)
+	for i := 0; i < n; i++ {
+		result[i] = make([]int, n)
+	}
+
+	for i := 0; i < n; i++ {
+		for j := 0; j < n; j++ {
+			result[j][n-1-i] = matrix[i][j]
+		}
+	}
+
+	return result
+}
+
+func RotateMatrixRvision2(matrix [][]int) [][]int {
+	n := len(matrix)
+	for i := 0; i < n; i++ {
+		for j := i + 1; j < n; j++ {
+			swapMatrix(i, j, matrix)
+		}
+	}
+
+	for i := 0; i < n; i++ {
+		arr := matrix[i]
+		slices.Reverse(arr)
+	}
+
+	return matrix
 }

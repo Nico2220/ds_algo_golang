@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Nico2220/ds_algo_golang/array"
+	"github.com/Nico2220/ds_algo_golang/twopointers"
 )
 
 type Parent struct{}
@@ -21,7 +21,9 @@ func (p *Child) Print() {
 }
 
 func main() {
-	result := array.RotateMatrix_solution2([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
+
+	result := twopointers.Minwindow("ADOBECODEBANC", "ABC")
+
 	fmt.Println(result)
 
 }
